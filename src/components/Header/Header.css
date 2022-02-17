@@ -1,0 +1,11 @@
+.header {
+    padding: 2%;
+    font-size: xx-large;
+    color: var(--text-dark-purple);
+}
+
+.hr {
+    color: var(--text-dark-purple);
+    width: 80%;
+    stroke-width: 3px;
+}

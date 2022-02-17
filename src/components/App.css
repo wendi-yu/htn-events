@@ -1,0 +1,22 @@
+:root {
+  --text-purple: #C4AFFF;
+  --text-dark-purple: #54457F;
+  --bg-light-purple: #E2D8FF;
+  --bg-light-grey: #F4F4F4;
+  font: Public Sans;
+}
+
+.navbar {
+  padding: 1%;
+  background-color: var(--bg-light-grey);
+}
+
+.brand_logo {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.brand {
+  display: inline-block;
+  margin: 2px;
+}

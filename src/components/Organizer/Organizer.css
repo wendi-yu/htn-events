@@ -1,0 +1,14 @@
+.organizer_block {
+    display: inline-block;
+}
+
+.organizer {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.organizer_profile {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}

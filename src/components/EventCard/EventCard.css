@@ -1,0 +1,39 @@
+.event_card {
+    margin: 2%;
+    border: 2px solid var(--bg-light-grey);
+    border-left: 5px solid var(--text-dark-purple);
+}
+
+.description_block {
+    margin: 2%;
+    display: inline-block;
+    vertical-align: top;
+    width: 80%;
+}
+
+.event_title {
+    font-size: large;
+    margin: 0px;
+}
+
+.event_type {
+    font-size: medium;
+    color: var(--bg-light-purple);
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.event_description {
+    font-size: small;
+    margin: 0px;
+}
+
+.btn-event {
+    background-color: var(--bg-light-purple);
+    border-radius: 5px;
+    border-width: 0px;
+    padding: 5px 10px;
+    vertical-align: bottom;
+    margin-bottom: 10px;
+    display: inline-block;
+}
