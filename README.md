@@ -1,70 +1,18 @@
-# Getting Started with Create React App
+# Writeup
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## The Process
 
-## Available Scripts
+I'm not going to lie, this was a dumpster fire. Full disclaimer, it's entirely my fault for leaving it til like 5 hours before the deadline. But anyways, I'm mostly a backend dev; my frontend work has been limited to bugfixes and adding pre-existing components. So this project required a lot of exploration and stack decisions that I was probably ill-equipped to be making. 
 
-In the project directory, you can run:
+In terms of structure and design, I chose a single-page React App for the simplicity it provides. I think a good philosophy when starting new projects is to not make things more complicated than they need to be - overengineering is the death of readability and efficiency. So I went with an SPA and Bootstrap/CSS to take advantage of the relative simplicity of this project, since I didn't need a ton of custom components or styling. I chose React because it's the only frontend framework I've worked with, and this project seemed suited to a modular breakdown into components. I decided to assemble singleton components in the main App component, and cobble together the subcomponents for the reapeated events separately.
 
-### `npm start`
+I encountered the usual suite of problems, mostly arising from my lack of experience doing frontend work. A lot of them were just general struggles with achieving the right layout and style and navigating Bootstrap's framework, which I generally solved with liberal Googling of code examples. I spent a while deciding how to design the actual appearance of the events page, since I wanted to emphasize the important information without cluttering the design. I actually made a Figma [here](https://www.figma.com/file/ABdBrTO2VoTuN2S2M6a1hF/Untitled?node-id=2%3A37), which is what I ideally would have wanted the finished product to look like. I initially considered a card-like layout (hampered by the fact that we didn't have a main picture for the events), a calendar-like view (decided against it because the events are spread 11 months apart), so I went with a linear list view instead. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## More Time
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+I'd clean up a lot of things if I had more time. I'd definitely check if I was using Bootstrap properly, and try to fully leverage its builtin customization functionality instead of customizing so much with CSS. I'd probably change the positioning system over to flexboxes for better scaling (or even use the Bootstrap breakpoints), fix up the design for mobile, and add more accessibility features. I'd also implement the search and filtering functions, probably by keeping a master list of filters to apply to the events shown. In addition, I'd actually implement login properly.
 
-### `npm test`
+In terms of scalability, I'd definitely want to incorporate a proper authentication system, rather that relying on a homebrewed solution. A dedicated library is likely much more secure and performant than anything I could write up in a reasonable amount of time. I'd also add unit tests to support the extensibility of the codebase. I might add the ability to star events for logged in users so they can save what thye're interested in, but beyond more filtering/marking options I wouldn't extend the capabilities of this page specifically. It looks like there's already hopin to register and the rest of the website for other interesting offerings, so for the sake of separation of concerns I'd keep this page as what it is - a dashboard overview of offered events. Performance metrics would be interesting to see how long API calls are taking, but since it's not a very dynamic page I wouldn't go ham on this application over other, more interactive components.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Other thoughts
+Sorry it's kind of a disaster :)
